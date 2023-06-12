@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% for usuario in usuarios %}
+<li class="list-group-item">
+    {{ usuario.nombre }} {{ usuario.apellido }} | {{ usuario.correo }} | {{ usuario.telefono }} | {{ usuario.direccion
+    }}
+</li>
+{% endfor %}
+{% endblock%}
